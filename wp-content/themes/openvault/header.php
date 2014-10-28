@@ -49,8 +49,8 @@
 <link href="<?php echo get_option('openvault_url'); ?>/assets/application.css?body=1" media="screen" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<script src="<?php echo get_option('openvault_url'); ?>/assets/jquery.js?body=1" type="text/javascript"></script>
-<script src="<?php echo get_option('openvault_url'); ?>/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
