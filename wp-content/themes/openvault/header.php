@@ -101,16 +101,8 @@
           <div class="span9">
             <div id="search-bar">
               <form accept-charset="UTF-8" action="<?php echo get_option('openvault_url') ?>/catalog" class="search-query-form form-inline clearfix" method="get">
-                <div style="margin:0;padding:0;display:inline">
-                  <input name="utf8" type="hidden" value="✓">
-                </div><input name="slug" type="hidden" value="test-collection-1">
-
-                <div class="pull-left">
-                  <label class="hide-text" for="search_field">Search in</label> <span class="hide-text">for</span>
-                </div>
-
                 <div class="input-append pull-left">
-                  <label class="hide-text" for="q">Searh Archive</label> <input class="search_q q" id="q" name="q" placeholder="Searh Archive" type="text"> <button class="search-btn icon-search" id="search" style="font-style: italic" type="submit"></button>
+                  <label class="hide-text" for="q">Search Archive</label> <input class="search_q q" id="q" name="q" placeholder="Searh Archive" type="text"> <button class="search-btn icon-search" id="search" style="font-style: italic" type="submit"></button>
                 </div>
               </form>
             </div>
