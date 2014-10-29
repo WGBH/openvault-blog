@@ -32,8 +32,7 @@
   <link href=
   "http://openvault.wgbh.org/assets/favicon-06f51cefefc0543acf7794075c74e7d2.ico"
   rel="shortcut icon" type="image/vnd.microsoft.icon">
-  <link href=
-  "http://openvault.wgbh.org/assets/application-0fb903aaf9c4dcdb0d89e77df1f13a33.css"
+  <link href="/wp-content/themes/openvault/application.css"
   media="screen" rel="stylesheet" type="text/css">
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
   <style>
