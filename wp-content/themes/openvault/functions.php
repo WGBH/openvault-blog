@@ -1,1 +1,1 @@
-<!-- no functions -->
+<?php /* no functions */ ?>

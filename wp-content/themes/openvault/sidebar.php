@@ -1,1 +1,1 @@
-<!-- no sidebar -->
+<?php /* no sidebar */ ?>
