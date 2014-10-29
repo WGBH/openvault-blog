@@ -69,48 +69,6 @@ margin: 0;
   background-color: transparent;
 }
 
-#site-title {
-  margin: 0;
-  margin-top: 12px;
-  
-  padding: 0;
-}
-
-#site-title a {
-display: block;
-text-indent: -119988px;
-overflow: hidden;
-text-align: left;
-background-image: url('/assets/openvault.png?1304697733');
-background-repeat: no-repeat;
-background-position: 0% 50%;
-width: 306px;
-height: 39px;
-}
-
-#site-description {
-text-indent: -119988px;
-overflow: hidden;
-text-align: left;
-background-image: url('/assets/wgbh_mla.png?1304697733');
-background-repeat: no-repeat;
-background-position: 50% 50%;
-width: 185px;
-height: 36px;
-margin-top: 1.591em;
-}
-
-#site-title {
-  position: absolute;
-left: 0;
-}
-
-#site-description {
-  position: absolute;
-left: 0;
-top: 47px;
-}
-
 #branding {
   border: none;
   background-image: url('/assets/bg-logo.png?1307135246');
@@ -229,38 +187,6 @@ margin-bottom: 0em;
   padding-top: 1em;
 }
 
-#colophon {
-
-}
-
-#colophon .widget-area {
-  background-color: #fff;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-right: 10px;
-  -moz-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
--webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
--o-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
-background-color: white;
-border: 1px solid #CCC;
-  background-color: white;
-}
-
-#colophon .widget_nav_menu {
-  margin: 0;
-}
-
-#colophon .widget_nav_menu ul, #colophon .widget_nav_menu li {
-   list-style: none;
-  display: inline-block;
-}
-
-#colophon .widget-area, #supplementary {
-  width: 100%;
-}
-
-
 .wp-caption {
   background: transparent;
 }
@@ -274,41 +200,6 @@ border: 1px solid #CCC;
   display: none;
 }
 
-/* line 142, ../../../app/stylesheets/screen.scss */
-.user_util_links {
-  position: absolute;
-  right: 7px;
-  top: 34px;
-  font-size: 12.5px;
-  text-align: right;
-  color: #004c99;
-}
-/* line 150, ../../../app/stylesheets/screen.scss */
-.user_util_links a, .user_util_links .ui-widget-content a, .ui-widget-content .user_util_links a {
-  color: #fff;
-}
-/* line 18, ../../../../../../../../Users/chris_beer/.rvm/gems/ruby-1.8.7-p334@openvault/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.user_util_links a:visited, .user_util_links .ui-widget-content a:visited, .ui-widget-content .user_util_links a:visited {
-  color: #fff;
-}
-/* line 21, ../../../../../../../../Users/chris_beer/.rvm/gems/ruby-1.8.7-p334@openvault/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.user_util_links a:focus, .user_util_links .ui-widget-content a:focus, .ui-widget-content .user_util_links a:focus {
-  color: #fff;
-}
-/* line 24, ../../../../../../../../Users/chris_beer/.rvm/gems/ruby-1.8.7-p334@openvault/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.user_util_links a:hover, .user_util_links .ui-widget-content a:hover, .ui-widget-content .user_util_links a:hover {
-  color: #fff;
-}
-/* line 27, ../../../../../../../../Users/chris_beer/.rvm/gems/ruby-1.8.7-p334@openvault/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-.user_util_links a:active, .user_util_links .ui-widget-content a:active, .ui-widget-content .user_util_links a:active {
-  color: #fff;
-}
-/* line 154, ../../../app/stylesheets/screen.scss */
-.user_util_links strong {
-  display: inline-block;
-  padding-right: 10px;
-  color: black;
-}
 #search-bar .search-query-form input.search_q {
   padding: 4px 20px 4px 6px;
 }
@@ -352,63 +243,3 @@ border: 1px solid #CCC;
   right: 0;
 }
 
-#colophon .widget-area {
-  border: none;
-padding: 0;
-  background: none;
-  font-size: 11px;
- -moz-box-shadow: none;
- -webkit-box-shadow: none;
- -o-box-shadow: none;
-  box-shadow: none;
-}
-
-/* line 147, ../../../../../../../../Users/chris_beer/.rvm/gems/ruby-1.8.7-p334@openvault/gems/compass-0.11.1/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
-* html #colophon .menu {
-  overflow-x: hidden;
-}
-/* line 184, ../../../app/stylesheets/screen.scss */
-#colophon .menu a, #colophon .menu .ui-widget-content a, .ui-widget-content #colophon .menu a {
-  color: white;
-font-weight: normal;
-}
-/* line 18, ../../../../../../../../Users/chris_beer/.rvm/gems/ruby-1.8.7-p334@openvault/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-#colophon .menu a:visited, #colophon .menu .ui-widget-content a:visited, .ui-widget-content #colophon .menu a:visited {
-  color: white;
-}
-/* line 21, ../../../../../../../../Users/chris_beer/.rvm/gems/ruby-1.8.7-p334@openvault/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-#colophon .menu a:focus, #colophon .menu .ui-widget-content a:focus, .ui-widget-content #colophon .menu a:focus {
-  color: #cccccc;
-}
-/* line 24, ../../../../../../../../Users/chris_beer/.rvm/gems/ruby-1.8.7-p334@openvault/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-#colophon .menu a:hover, #colophon .menu .ui-widget-content a:hover, .ui-widget-content #colophon .menu a:hover {
-  color: #cccccc;
-}
-/* line 27, ../../../../../../../../Users/chris_beer/.rvm/gems/ruby-1.8.7-p334@openvault/gems/compass-0.11.1/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
-#colophon .menu a:active, #colophon .menu .ui-widget-content a:active, .ui-widget-content #colophon .menu a:active {
-  color: #cccccc;
-}
-/* line 189, ../../../app/stylesheets/screen.scss */
-#colophon .menu ul, #colophon .menu li {
-  list-style: none;
-  display: inline-block;
-font-size: 11px;
-}
-/* line 194, ../../../app/stylesheets/screen.scss */
-#colophon .menu li {
-  margin-right: 0.3em;
-}
-/* line 197, ../../../app/stylesheets/screen.scss */
-#colophon .menu li:after {
-  padding-left: 0.3em;
-  content: " | ";
-  color: white;
-}
-/* line 203, ../../../app/stylesheets/screen.scss */
-#colophon .menu li:last-of-type:after {
-  content: "";
-}
-/* line 209, ../../../app/stylesheets/screen.scss */
-#colophon .copyright {
-  color: white;
-}
