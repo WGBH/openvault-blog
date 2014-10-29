@@ -1,33 +1,39 @@
-<?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the id=main div and all content after
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
- */
-?>
+      </div>
+    </div><!-- /Body Content -->
+  </div><!-- /Main container -->
+  <!-- Footer -->
 
-	</div><!-- #main -->
-
-	<footer id="colophon" role="contentinfo" class="footer_container row-fluid">
-    <div id="footer">
+  <div id="footer" class="row-fluid">
+    <div id="footer_inner">
       <div class="footer_links">
-  			<?php
-  				/* A sidebar in the footer? Yep. You can can customize
-  				 * your footer with three columns of widgets.
-  				 */
-  				if ( ! is_404() )
-  					get_sidebar( 'footer' );
-  			?>
+        <span class="footer_link"><a href=
+        "http://openvault.wgbh.org/">Home</a></span> | <span class=
+        "footer_link"><a href=
+        "http://openvault.wgbh.org/about/">About Us</a></span> |
+        <span class="footer_link"><a href=
+        "http://blog.openvault.wgbh.org/">Blog</a></span> |
+        <span class="footer_link"><a href=
+        "http://openvault.wgbh.org/contact-us/">Contact
+        Us</a></span> | <span class="footer_link"><a href=
+        "http://openvault.wgbh.org/help/">Help</a></span> |
+        <span class="footer_link"><a href=
+        "http://openvault.wgbh.org/credits/">Credits</a></span> |
+        <span class="footer_link"><a href=
+        "http://openvault.wgbh.org/privacy-policy/">Privacy
+        Policy</a></span> | <span class="footer_link"><a href=
+        "http://openvault.wgbh.org/terms-and-conditions/">Terms and
+        Conditions</a></span> | <span class="footer_link"><a href=
+        "http://openvault.wgbh.org/visiting-the-archives/">Visiting
+        the Archives</a></span>
+      </div>
+
+      <div class="copyright">
+        Copyright 2014 WGBH Educational Foundation. All rights
+        reserved.
       </div>
     </div>
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+  </div>
 
 <?php wp_footer(); ?>
-
 </body>
 </html>

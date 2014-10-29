@@ -1,29 +1,13 @@
-<?php
-/**
- * The Header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="main">
- *
- * @package WordPress
- * @subpackage Twenty Eleven
- * @since Twenty Eleven 1.0
- */
-?><!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
-<!--<![endif]-->
+<!DOCTYPE html>
+
+<html>
 <head>
+  <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+  <!--[if IEMobile]>
+    <meta http-equiv="cleartype" content="on">
+    <![endif]-->
+
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -45,15 +29,18 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
 
 	?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link href="<?php echo get_option('openvault_url'); ?>/assets/application.css?body=1" media="screen" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
-<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-<![endif]-->
+  <link href=
+  "http://openvault.wgbh.org/assets/favicon-06f51cefefc0543acf7794075c74e7d2.ico"
+  rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <link href=
+  "http://openvault.wgbh.org/assets/application-0fb903aaf9c4dcdb0d89e77df1f13a33.css"
+  media="screen" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+  <style>
+    .entry-format {
+      display: none;
+    }
+  </style>
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -70,46 +57,64 @@
 ?>
 </head>
 
-<body <?php body_class(); ?>>
-  <div class="hfeed container" id="main-container">
-    <div class="row" id="header">
-      <div class="span12">
-        <!-- Openvault Logo and login -->
+<body class="blacklight-catalog blacklight-catalog-home">
+  <!-- Header container -->
 
-        <div class="row" id="header_top">
-          <div class="span6">
-            <a href="/">
-            <div id="ov-logo-home">
-              OpenVault
-            </div></a>
+  <div id="header">
+    <div class="container">
+      <div class="row-fluid">
+        <div id="header_inner">
+          <!-- Openvault Logo and login -->
+
+          <div class="span4 hidden-phone">
+            <h1><a href="http://openvault.wgbh.org/" class=
+            "logo-link">WGBH Media Library &amp; Archives Open
+            Vault</a></h1>
           </div>
 
-          <div class="span6 pull-right action_links">
-            &nbsp;
-          </div>
-        </div><!-- Logo and login -->
-        <!-- MLA Logo and search bar -->
-
-        <div class="row">
-          
-          <div class="span3">
-            <div id="mla-logo">
-              Media Library and Archives
-            </div>
-          </div>
-
-          <div class="span9">
+          <div class="span6 hidden-phone">
             <div id="search-bar">
-              <form accept-charset="UTF-8" action="<?php echo get_option('openvault_url') ?>/catalog" class="search-query-form form-inline clearfix" method="get">
-                <div class="input-append pull-left">
-                  <label class="hide-text" for="q">Search Archive</label> <input class="search_q q" id="q" name="q" placeholder="Searh Archive" type="text"> <button class="search-btn icon-search" id="search" style="font-style: italic" type="submit"></button>
+              <form accept-charset="UTF-8" action="http://openvault.wgbh.org/catalog" class=
+              "search-query-form form-inline" method="get">
+                <div class="pull-left">
+                  <label for="search_field" class=
+                  "hide-text">Search in</label> <span class=
+                  "hide-text">for</span>
+                </div>
+
+                <div id="nav-s-input" class=
+                "input-append pull-left">
+                  <label for="q" class=
+                  "hide-text">Search...</label> <input class=
+                  "search_q q q_full" id="q" name="q" placeholder=
+                  "What are you looking for?" type="text">
+                  <button type="submit" class="search-btn" id=
+                  "search"></button>
                 </div>
               </form>
             </div>
+
+            <div class="pull-right">
+              <span id="browse-label">Browse:</span> <a href=
+              "http://openvault.wgbh.org/series" class=
+              "btn">Series</a>
+            </div>
+          </div><!-- Logo and login -->
+
+          <div id="mobile-header" class=
+          "hidden-tablet hidden-desktop">
+            <a href="http://openvault.wgbh.org/"><img src=
+            "http://openvault.wgbh.org/assets/ov_logo_220.png" class="logo"></a>
+            
           </div>
-          
         </div>
       </div>
     </div>
+  </div><!-- /Header -->
+  <!-- Main container -->
 
-    <div class="row" id="main">
+  <div id="main-container" class="container">
+    <!-- Body Content -->
+
+    <div id="body" class="row-fluid">
+      <div class="span12">
